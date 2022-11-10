@@ -19,10 +19,10 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
 
 
 ## Membuat Halaman Web Sederhana
-1. Buat folder baru dengan menggunakan terminal, gunakan `mkdir <nama direktori>`
-2. Buat file dengan nama `index.html`
-3. Buka index.html
-4. Buat HTML *Boilerplate*
+1.  Buat folder baru dengan menggunakan terminal, gunakan `mkdir <nama direktori>`
+2.  Buat file dengan nama `index.html`
+3.  Buka index.html
+4.  Buat HTML *Boilerplate*
     ```
     <!DOCTYPE html>
     <html lang="en">
@@ -37,7 +37,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     </html>
     ```
     
-5. Di dalam tag body tambahkan keterangan, label, dan input
+5.  Di dalam tag body tambahkan keterangan, label, dan input
     ```
     <body>
       <div>
@@ -49,7 +49,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     </body>
     ```
     
-6. Di dalam tag div tambahkan buttons
+6.  Di dalam tag div tambahkan buttons
     ```
     <button onclick="getMood()">Get Mood</button>
     <button onclick="setMood()">Set Mood</button>
@@ -77,18 +77,18 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     </style>
     ```
 
-8. Buka halaman web pada root folder dari `index.html` dengan menggunakan
+8.  Buka halaman web pada root folder dari `index.html` dengan menggunakan
     ```
     lite-server
     ```
     
-9. Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
-    ![Halaman Web](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
+9.  Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
+    ![](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
     
 ## Membuat Smart Contract Sederhana
-1. Pada tutorial ini kita akan menggunakan [Remix IDE](https://remix-project.org/)
-2. Buat file baru bernama `mood.sol`
-3. Tulis contract sebagai berikut
+1.  Pada tutorial ini kita akan menggunakan [Remix IDE](https://remix-project.org/)
+2.  Buat file baru bernama `mood.sol`
+3.  Tulis contract sebagai berikut
     - Tuliskan lisensi dan spesifikasi dari versi solidity
       ```
       // SPDX-License-Identifier: MIT
@@ -114,4 +114,28 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         return mood;
       }
       ```
-4. Deploy smart contract pada jaringan Testnet Goerli
+4.  Deploy smart contract pada jaringan Testnet Goerli
+
+## Menghubungkan Halaman Web dengan Smart Contract
+
+Kembali ke text editor pada `index.html`, tambahkan kode berikut pada halaman html:
+  1.  Import Ethers.js ke dalam file `index.html` di dalam tag script:
+      ```
+      <script
+        src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+      ></script>
+
+      <script>
+        ////////////////////
+        //TAMBAHKAN KODE DI SINI
+        ////////////////////
+      </script>
+      ```
+  2.  Di dalam tag script, import ABI smart contract dan tambahkan alamat contract dari blockchain provider
+      ```
+      const MoodContractAddress = "<contract address>";
+      const MoodContractABI = <contract ABI>
+      let MoodContract;
+      let signer;
+      ```
