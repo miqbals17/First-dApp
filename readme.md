@@ -55,7 +55,9 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     <button onclick="setMood()">Set Mood</button>
     ```
     
-  **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
+**OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
+    
+    ```
     <style>
       body {
         text-align: center;
@@ -74,6 +76,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         margin: 10px 0px 5px 0px;
       }
     </style>
+    ```
     
 8. Buka halaman web pada root folder dari `index.html` dengan menggunakan
     ```
