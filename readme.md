@@ -56,26 +56,27 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     ```
     
 **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
-    
-    <style>
-      body {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+```
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-      div {
-        width: 20%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-      }
+  div {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-      button {
-        width: 100%;
-        margin: 10px 0px 5px 0px;
-      }
-    </style>
-    
+  button {
+    width: 100%;
+    margin: 10px 0px 5px 0px;
+  }
+</style>
+```
+
 8. Buka halaman web pada root folder dari `index.html` dengan menggunakan
     ```
     lite-server
