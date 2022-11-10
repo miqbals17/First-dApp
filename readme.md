@@ -55,8 +55,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     <button onclick="setMood()">Set Mood</button>
     ```
     
-**OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
-
+  **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
     ```
     <style>
       body {
