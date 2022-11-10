@@ -56,6 +56,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     ```
     
 **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
+
     ```
     <style>
       body {
