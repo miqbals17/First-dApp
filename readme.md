@@ -82,4 +82,36 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     lite-server
     ```
     
-9. Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan
+9. Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
+    ![Halaman Web](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
+    
+## Membuat Smart Contract Sederhana
+1. Pada tutorial ini kita akan menggunakan [Remix IDE](https://remix-project.org/)
+2. Buat file baru bernama `mood.sol`
+3. Tulis contract sebagai berikut
+    - Tuliskan lisensi dan spesifikasi dari versi solidity
+      ```
+      // SPDX-License-Identifier: MIT
+      pragma solidity ^0.8.0;
+      ```
+    - Buat contract
+      ```
+      contract MoodDiary {
+      
+      }
+      ```
+    - Di dalam contract, buat variabel `mood`
+      ```
+      string mood;
+      ```
+    - Buat fungsi set dan get
+      ```
+      function setMood(string memory _mood) public {
+        mood = _mood;
+      }
+      
+      function getMood() public view returns(string memory) {
+        return mood;
+      }
+      ```
+4. Deploy smart contract pada jaringan Testnet Goerli
