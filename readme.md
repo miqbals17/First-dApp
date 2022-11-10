@@ -10,8 +10,8 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
 ## Perisapan
 1. **Download and Install** [MetaMask](https://metamask.io/)
 2. **Request ether dari faucet Goerli Testnet ke akun Metamask wallet**
-  - [Request faucet](https://faucets.chain.link/)
+    - [Request faucet](https://faucets.chain.link/)
 3. **Install http server. Dapat menggunakan apa saja, disini kita akan menggunakan `lite-server`**
-  - Install [Node.js](https://nodejs.org/en/)
-  - Install lite-server dengan menggunakan npm pada terminal
-    `npm install -g lite-server`
+    - Install [Node.js](https://nodejs.org/en/)
+    - Install lite-server dengan menggunakan npm pada terminal
+      `npm install -g lite-server`
