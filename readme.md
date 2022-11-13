@@ -139,3 +139,75 @@ Kembali ke text editor pada `index.html`, tambahkan kode berikut pada halaman ht
       let MoodContract;
       let signer;
       ```
+      ABI Smart contract didapatkan melalui Remix IDE setelah smart contract dicompile, nilai dari ABI smart contract kurang lebih akan seperti ini:
+      ```
+      [
+        {
+          "inputs": [],
+          "name": "getMood",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_mood",
+              "type": "string"
+            }
+          ],
+          "name": "setMood",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ]
+      ```
+  3.  Selanjutnya, kita akan mendefenisikan ethers provider. Dalam hal ini kita akan menggunakan Goerli:
+      ```
+      const provider = new ethers.providers.Web3Provider(window.ethereum, "goerli");
+      ```
+  4.  Lakukan request access ke wallet user dan menghubungkan *signer* ke akun metamask (kita akan menggunakan `[0]` sebagai default), dan mendefinisikan object contract dengan menggunakan contract address, ABI, dan *signer*
+      ```
+      provider.send("eth_requestAccounts", []).then(() => {
+          provider.listAccounts().then((accounts) => {
+              signer = provider.getSigner(accounts[0]);
+              MoodContract = new ethers.Contract(
+                  MoodContractAddress,
+                  MoodContractABI,
+                  signer
+              );
+          });
+      });
+      ```
+  5.  Buat asynchronous functions untuk memanggil smart contract functions
+      ```
+      async function getMood() {
+          const getMoodPromise = MoodContract.getMood();
+          const Mood = await getMoodPromise;
+          document.getElementById("output").innerHTML = "Output: <br/>" + Mood;
+      }
+
+      async function setMood() {
+          const mood = document.getElementById("mood").value;
+          const setMoodPromise = MoodContract.setMood(mood);
+          await setMoodPromise;
+      }
+      ```
+  6.  Hubungkan functions tersebut ke buttons pada file html
+      ```
+      <button onclick="getMood()">Get Mood</button>
+      <button onclick="setMood()">Set Mood</button>
+      ```
+## Saatnya Melakukan Test
+1.  Akses [http://127.0.0.1:3000/](http://127.0.0.1:3000/) pada browser anda
+2.  Tes function dan approve transaksi yang dibutuhkan melalui Metamask. Waktu untuk eksekusi pada blockchain sekitar ~15 detik... silakan tunggu hingga selesai transaksi
+3.  Cek informasi contract dan transaksi melalui [https://goerli.etherscan.io](https://goerli.etherscan.io)
+4.  Buka console (`Ctrl + Shift + i`) pada browser dan lihat keajaiban ketika anda menekan tombol `Get Mood`
