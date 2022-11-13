@@ -205,6 +205,7 @@ Kembali ke text editor pada `index.html`, tambahkan kode berikut pada halaman ht
       
 ## Saatnya Melakukan Test
 1.  Akses [http://127.0.0.1:3000/](http://127.0.0.1:3000/) pada browser anda
-2.  Tes function dan approve transaksi yang dibutuhkan melalui Metamask. Waktu untuk eksekusi pada blockchain sekitar ~15 detik... silakan tunggu hingga selesai transaksi
-3.  Cek informasi contract dan transaksi melalui [https://goerli.etherscan.io](https://goerli.etherscan.io)
-4.  Buka console (`Ctrl + Shift + i`) pada browser dan lihat keajaiban ketika anda menekan tombol `Get Mood`
+
+3.  Tes function dan approve transaksi yang dibutuhkan melalui Metamask. Waktu untuk eksekusi pada blockchain sekitar ~15 detik... silakan tunggu hingga selesai transaksi
+4.  Cek informasi contract dan transaksi melalui [https://goerli.etherscan.io](https://goerli.etherscan.io)
+5.  Buka console (`Ctrl + Shift + i`) pada browser dan lihat keajaiban ketika anda menekan tombol `Get Mood`
