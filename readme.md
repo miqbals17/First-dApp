@@ -34,7 +34,8 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
 
       <body></body>
     </html>
-    ```    
+    ``` 
+    
 5.  Di dalam tag body tambahkan keterangan, label, dan input
     ```
     <body>
@@ -46,6 +47,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
       </div>
     </body>
     ```
+    
 6.  Di dalam tag div tambahkan buttons
     ```
     <button onclick="getMood()">Get Mood</button>
@@ -70,10 +72,12 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
       }
     </style>
     ```
+    
 8.  Buka halaman web pada root folder dari `index.html` dengan menggunakan
     ```
     lite-server
     ```
+    
 9.  Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
     ![image](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
     
