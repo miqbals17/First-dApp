@@ -1,6 +1,6 @@
 # Membuat dApps Pertama Kita
 
-Berikut adalah step-by-step cara untuk membuat front end, deploy smart contract dengan bahasa Solidity, dan mengkoneksikan semuanya. Kita akan mengunakan [Metamask](https://metamask.io/), [Remix IDE](https://remix-project.org/), dan [Ethers.js](https://docs.ethers.io/v5/)
+Berikut adalah step-by-step cara untuk membuat front end, deploy smart contract dengan bahasa Solidity, dan mengkoneksikan semuanya. Kita akan mengunakan [Metamask](https://metamask.io/), [Remix IDE](https://remix-project.org/), dan library [Ethers.js](https://docs.ethers.io/v5/)
 
 Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end HTML sederhana dengan buttons yang dapat berinteraksi dengan fungsi smart contract. Tutorial ini akan terbagi dalam 3 tahapan
   - Membuat halaman HTML sederhana
