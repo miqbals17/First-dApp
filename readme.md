@@ -8,15 +8,14 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
   - Mengkoneksikan halaman web dengan smart contract menggunakan Ethers.js
 
 ## Perisapan
-1. **Download and Install** [MetaMask](https://metamask.io/)
-2. **Request ether dari faucet Goerli Testnet ke akun Metamask wallet**
-    - [Request faucet](https://faucets.chain.link/)
+1.  **Download and Install** [MetaMask](https://metamask.io/)
+2.  **Request ether dari faucet Goerli Testnet ke akun Metamask wallet**
+      - [Request faucet](https://faucets.chain.link/)
 
-3. **Install http server. Dapat menggunakan apa saja, disini kita akan menggunakan `lite-server`**
-    - Install [Node.js](https://nodejs.org/en/)
-    - Install lite-server dengan menggunakan npm pada terminal
-      `npm install -g lite-server`
-
+3.  **Install http server. Dapat menggunakan apa saja, disini kita akan menggunakan `lite-server`**
+      - Install [Node.js](https://nodejs.org/en/)
+      - Install lite-server dengan menggunakan npm pada terminal
+        `npm install -g lite-server`
 
 ## Membuat Halaman Web Sederhana
 1.  Buat folder baru dengan menggunakan terminal, gunakan `mkdir <nama direktori>`
@@ -35,8 +34,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
 
       <body></body>
     </html>
-    ```
-    
+    ```    
 5.  Di dalam tag body tambahkan keterangan, label, dan input
     ```
     <body>
@@ -48,13 +46,11 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
       </div>
     </body>
     ```
-    
 6.  Di dalam tag div tambahkan buttons
     ```
     <button onclick="getMood()">Get Mood</button>
     <button onclick="setMood()">Set Mood</button>
     ```
-    
     **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
     ```
     <style>
@@ -62,26 +58,22 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
       }
-
       div {
         width: 20%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
       }
-
       button {
         width: 100%;
         margin: 10px 0px 5px 0px;
       }
     </style>
     ```
-
 8.  Buka halaman web pada root folder dari `index.html` dengan menggunakan
     ```
     lite-server
     ```
-    
 9.  Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
     ![](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
     
@@ -117,7 +109,6 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
 4.  Deploy smart contract pada jaringan Testnet Goerli
 
 ## Menghubungkan Halaman Web dengan Smart Contract
-
 Kembali ke text editor pada `index.html`, tambahkan kode berikut pada halaman html:
   1.  Import Ethers.js ke dalam file `index.html` di dalam tag script:
       ```
@@ -206,6 +197,7 @@ Kembali ke text editor pada `index.html`, tambahkan kode berikut pada halaman ht
       <button onclick="getMood()">Get Mood</button>
       <button onclick="setMood()">Set Mood</button>
       ```
+      
 ## Saatnya Melakukan Test
 1.  Akses [http://127.0.0.1:3000/](http://127.0.0.1:3000/) pada browser anda
 2.  Tes function dan approve transaksi yang dibutuhkan melalui Metamask. Waktu untuk eksekusi pada blockchain sekitar ~15 detik... silakan tunggu hingga selesai transaksi
