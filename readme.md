@@ -18,6 +18,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         `npm install -g lite-server`
 
 ## Membuat Halaman Web Sederhana
+
 1.  Buat folder baru dengan menggunakan terminal, gunakan `mkdir <nama direktori>`
 2.  Buat file dengan nama `index.html`
 3.  Buka index.html
