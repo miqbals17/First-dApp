@@ -48,10 +48,12 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     </body>
     ```
     
-6.  Di dalam tag div tambahkan buttons
+6.  Di dalam tag div tambahkan buttons dan tags untuk menampilkan alamat Smart Contract serta hasil transaksi
     ```
     <button onclick="getMood()">Get Mood</button>
     <button onclick="setMood()">Set Mood</button>
+    <h2 id="sc-address">Smart Contract Address:</h2>
+    <h2 id="output">Output:</h2>
     ```
     **OPTIONAL** Tambahkan styling pada tag head untuk tampilan yang lebih terstruktur
     ```
@@ -69,6 +71,9 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
       button {
         width: 100%;
         margin: 10px 0px 5px 0px;
+      }
+      h2 {
+            font-size: 12px;
       }
     </style>
     ```
