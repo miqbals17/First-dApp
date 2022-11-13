@@ -18,7 +18,6 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         `npm install -g lite-server`
 
 ## Membuat Halaman Web Sederhana
-
 1.  Buat folder baru dengan menggunakan terminal, gunakan `mkdir <nama direktori>`
 2.  Buat file dengan nama `index.html`
 3.  Buka index.html
@@ -76,7 +75,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
     lite-server
     ```
 9.  Pergi ke [http://127.0.0.1:3000/](http://127.0.0.1:3000/) untuk melihat halaman web yang telah dijalankan. Tampilan halaman web akan seperti berikut ini
-    ![](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
+    ![image](https://user-images.githubusercontent.com/37977826/201115792-d108318d-0ce7-4d20-b043-37ab3efe2ee4.png)
     
 ## Membuat Smart Contract Sederhana
 1.  Pada tutorial ini kita akan menggunakan [Remix IDE](https://remix-project.org/)
@@ -107,6 +106,7 @@ Pada tahap akhir dari tutorial ini, kita dapat membuat sebuah halaman front end 
         return mood;
       }
       ```
+      
 4.  Deploy smart contract pada jaringan Testnet Goerli
 
 ## Menghubungkan Halaman Web dengan Smart Contract
